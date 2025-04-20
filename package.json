@@ -1,0 +1,28 @@
+{
+  "name": "7d2.net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bolander72/7d2.net.git"
+  },
+  "keywords": [],
+  "author": "bolander72",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bolander72/7d2.net/issues"
+  },
+  "homepage": "https://github.com/bolander72/7d2.net#readme",
+  "dependencies": {
+    "@astrojs/sitemap": "^3.3.0",
+    "@astrojs/vercel": "^8.1.3",
+    "astro": "^5.7.4"
+  }
+}
