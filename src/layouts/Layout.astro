@@ -2,13 +2,13 @@
 import "@/styles/global.css";
 
 interface Props {
-    title: string;
+    title?: string;
     description?: string;
     image?: string;
 }
 
 const {
-    title,
+    title = "7D2.NET",
     description = "I have a dog. I like Guinness.",
     image = "",
 } = Astro.props;
