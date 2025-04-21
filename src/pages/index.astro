@@ -1,18 +1,66 @@
 ---
-// Welcome to Astro! Everything between these triple-dash code fences
-// is your "component frontmatter". It never runs in the browser.
-console.log("This runs in your terminal, not the browser!");
+import Layout from "@/layouts/Layout.astro";
 ---
 
-<!-- Below is your "component template." It's just HTML, but with
-    some magic sprinkled in to help you build great templates. -->
-<html>
-    <body>
-        <h1>Hello, World!</h1>
-    </body>
-</html>
-<style>
-    h1 {
-        color: orange;
-    }
-</style>
+<Layout title="bolander(72)">
+    <main class="space-y-4">
+        <section class="flex flex-col space-y-2">
+            <h1>Welcome, bolander here.</h1>
+            <div class="flex flex-col">
+                <p>I work on money tech, mostly bitcoin.</p>
+                <p>Savings, privacy, opting-out stuff.</p>
+            </div>
+            <a href="/about">about me</a>
+        </section>
+
+        <section class="flex flex-col space-y-2">
+            <h1>Current</h1>
+            <div class="space-y-0">
+                <p><i>Lemondrop</i>, BTC savings for altcoiners.</p>
+                <p><i>Zoomer401k</i>, stacking sats cross-chain.</p>
+                <p><i>Bitcoin Layers</i>, bitcoin L2 research hub.</p>
+            </div>
+        </section>
+
+        <section class="flex flex-col space-y-2">
+            <h1>Previous</h1>
+            <div class="space-y-0">
+                <p>Tradfi savings products for independents.</p>
+                <p>BTC -- fiat on-ramps and off-ramps.</p>
+                <p>BTC gift cards and redemptions.</p>
+            </div>
+        </section>
+
+        <section class="flex flex-col space-y-2">
+            <h1>Contact</h1>
+            <div class="space-y-0">
+                <p>
+                    Twitter. <a
+                        href="https://twitter.com/bolander72"
+                        target="_blank"
+                        rel="noopener noreferrer">link</a
+                    >
+                </p>
+                <p>
+                    Github. <a
+                        href="https://github.com/bolander72"
+                        target="_blank"
+                        rel="noopener noreferrer">link</a
+                    >
+                </p>
+            </div>
+        </section>
+
+        <footer class="flex flex-col items-center">
+            <img
+                src="/528.jpeg"
+                alt="BTC Bangers #528"
+                class="size-30 translate-y-[15px]"
+            />
+            <hr class="w-full" />
+            <div class="!text-[8px] w-full flex justify-end">
+                BTC Bangers #528
+            </div>
+        </footer>
+    </main>
+</Layout>

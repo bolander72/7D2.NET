@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 48px 12px;
+}
+
+h1 {
+    @apply text-2xl font-bold;
+}
+
+h2 {
+    @apply text-xl font-bold;
+}
+
+h3 {
+    @apply text-lg font-bold;
+}
+
+p {
+    @apply text-base;
+}
+
+a {
+    @apply text-blue-600;
+    text-decoration: underline;
+}
+
+a:hover {
+    @apply text-blue-700;
+}
