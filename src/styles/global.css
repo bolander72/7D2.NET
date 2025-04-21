@@ -1,15 +1,5 @@
 @import "tailwindcss";
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    max-width: 550px;
-    margin: 0 auto;
-    padding: 48px 12px;
-}
-
 h1 {
     @apply text-2xl font-bold;
 }

@@ -1,5 +1,6 @@
 ---
 import "@/styles/global.css";
+import { ClientRouter } from "astro:transitions";
 
 interface Props {
     title?: string;
@@ -20,6 +21,7 @@ const {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
+        <ClientRouter />
 
         <!-- Primary Meta Tags -->
         <title>{title}</title>
@@ -42,11 +44,28 @@ const {
         <meta property="twitter:image" content={image} />
 
         <!-- Favicon -->
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
-        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon.png"
+            class="invert"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon.png"
+            class="invert"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="/favicon.png"
+            class="invert"
+        />
     </head>
-    <body>
+    <body class="min-h-screen max-w-[550px] mx-auto px-4 py-12">
         <slot />
     </body>
 </html>

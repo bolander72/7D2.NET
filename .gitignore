@@ -17,6 +17,7 @@ yarn.lock
 dist/
 build/
 .next/
+.vercel/
 out/
 
 # IDE and editor files
