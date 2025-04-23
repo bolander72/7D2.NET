@@ -1,6 +1,7 @@
 ---
 import "@/styles/global.css";
 import { ClientRouter } from "astro:transitions";
+import { Image } from "astro:assets";
 
 interface Props {
     title?: string;
@@ -67,5 +68,17 @@ const {
     </head>
     <body class="min-h-screen max-w-[550px] mx-auto px-4 py-12">
         <slot />
+        <footer class="flex flex-col items-center mt-8">
+            <a href="/">
+                <Image
+                    src="/726.png"
+                    alt="BTC Bangers #726"
+                    width={120}
+                    height={120}
+                    loading="eager"
+                    class="size-30"
+                />
+            </a>
+        </footer>
     </body>
 </html>
