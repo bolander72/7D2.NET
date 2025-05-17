@@ -1,7 +1,6 @@
 ---
-import "@/styles/global.css";
 import { ClientRouter } from "astro:transitions";
-import { Image } from "astro:assets";
+import "@/styles/global.css";
 
 interface Props {
     title?: string;
@@ -68,17 +67,36 @@ const {
     </head>
     <body class="min-h-screen max-w-[550px] mx-auto px-4 py-12">
         <slot />
-        <!-- <footer class="flex flex-col items-center mt-8">
-            <a href="/">
-                <Image
-                    src="/726.png"
-                    alt="BTC Bangers #726"
-                    width={120}
-                    height={120}
-                    loading="eager"
-                    class="size-30"
-                />
-            </a>
-        </footer> -->
+        <footer
+            class="flex flex-col border-t border-gray-100 items-center mt-8 pt-4"
+        >
+            <div class="flex justify-between w-full">
+                <div class="flex flex-col">
+                    <span>/ <a href="/">home</a></span>
+                    <span>/ <a href="/about">about</a></span>
+                </div>
+                <div class="flex flex-col">
+                    <span
+                        >/ <a href="https://x.com/bolander72" target="_blank"
+                            >twitter</a
+                        ></span
+                    >
+                    <span
+                        >/ <a
+                            href="https://github.com/bolander72"
+                            target="_blank">github</a
+                        ></span
+                    >
+                </div>
+                <div class="flex flex-col">
+                    <span
+                        >/ <a
+                            href="https://www.boland.co?ref=7D2.NET"
+                            target="_blank">company</a
+                        ></span
+                    >
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
