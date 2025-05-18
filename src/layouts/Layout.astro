@@ -1,5 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
+import { ChevronRightIcon } from "@lucide/astro";
 import "@/styles/global.css";
 
 interface Props {
@@ -68,26 +69,29 @@ const {
     <body class="min-h-screen max-w-[550px] mx-auto px-4 py-12">
         <slot />
         <footer class="flex flex-col border-t items-center mt-8 pt-4">
-            <div class="flex gap-12 w-full">
+            <div class="flex flex-col gap-4 w-full">
                 <div class="flex flex-col">
                     <span>/ <a href="/">home</a></span>
                     <span>/ <a href="/about">about</a></span>
                 </div>
                 <div class="flex flex-col">
-                    <span
+                    <span class="flex items-start gap-1"
                         >/ <a href="https://x.com/bolander72" target="_blank"
                             >twitter</a
-                        ></span
+                        ><ChevronRightIcon class="size-3 rotate-315" /></span
                     >
-                    <span
+                    <span class="flex items-start gap-1"
                         >/ <a
                             href="https://github.com/bolander72"
                             target="_blank">github</a
-                        ></span
+                        ><ChevronRightIcon class="size-3 rotate-315" /></span
                     >
                 </div>
                 <div class="flex flex-col">
-                    <span>/ <a href="https://boland.co">studio</a></span>
+                    <span class="flex items-start gap-1"
+                        >/ <a href="https://boland.co" target="_blank">studio</a
+                        ><ChevronRightIcon class="size-3 rotate-315" /></span
+                    >
                 </div>
             </div>
         </footer>

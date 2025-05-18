@@ -23,11 +23,11 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.4.0",
     "@astrojs/vercel": "^8.1.4",
+    "@lucide/astro": "^0.511.0",
     "@tailwindcss/vite": "^4.1.4",
     "astro": "^5.7.13",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.511.0",
     "tailwind-merge": "^3.3.0",
     "tailwindcss": "^4.1.4"
   },
